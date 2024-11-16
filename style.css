@@ -1,0 +1,224 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  /* Body Styles */
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(270deg, hsl(210deg 70% 20%) 0%, hsl(215deg 70% 30%) 50%, hsl(220deg 65% 50%) 100%);
+    /* Dark Blue Gradient */
+  }
+  
+  /* Main Container */
+  .container {
+    width: 695px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 30px;
+  }
+  
+  /* Wrapper for the Text Input Section */
+  .wrapper {
+    border-radius: 5px;
+    border: 1px solid #bbb;
+  }
+  
+  /* Input Area Styles */
+  .wrapper .text-input {
+    display: flex;
+    border-bottom: 1px solid rgb(226, 212, 212);
+  }
+  
+  .text-input .to-text {
+    border-radius: 0;
+    border: 1px solid rgb(226, 204, 204);
+  }
+  
+  .text-input textarea {
+    height: 255px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 18px;
+    border-radius: 5px;
+    background: none;
+    padding: 10px 15px;
+  }
+  
+  /* Controls List */
+  .controls,
+  li,
+  .icons,
+  .icons i {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .controls {
+    list-style: none;
+    padding: 12px 15px;
+  }
+  
+  /* Styling for icons on the left (from) */
+  .container .row.from .icons {
+    border-right: 1px solid rgb(214, 185, 185);
+    padding-right: 15px;
+  }
+  
+  /* Styling for icons on the right (to) */
+  .container .row.to .icons {
+    border-left: 1px solid #bbb;
+    padding-left: 15px;
+  }
+  
+  /* Control Icons */
+  .controls .icons {
+    width: 38%;
+  }
+  
+  .controls .icons i {
+    width: 50px;
+    color: #9f9f9f;
+    font-size: 14px;
+    cursor: pointer;
+    justify-content: center;
+  }
+  
+  /* Select Dropdowns */
+  .controls .row select {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: none;
+  }
+  
+  /* Exchange Button */
+  .controls .exchange {
+    color: #9f9f9f;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Submit Button */
+  .container button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    background: #6ba3e2;
+  }
+  
+  .container button:hover {
+    background-color: #5a92d1; /* Lighter Blue on Hover */
+  }
+  
+  /* Credit Footer */
+  .credit-footer {
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  /* Gradient & Glassmorphism Styles */
+  
+  /* Gradient 01 */
+  .gradient-01 {
+    position: absolute;
+    width: 50%;
+    inset: 0;
+    background: linear-gradient(270deg, hsl(295deg 76% 51%) 0%, hsl(284deg 70% 73%) 26%, hsl(257deg 70% 86%) 39%, hsl(202deg 92% 90%) 50%, hsl(215deg 77% 81%) 61%, hsl(221deg 73% 70%) 74%, hsl(220deg 76% 51%) 100%);
+    filter: blur(125px);
+  }
+  
+  /* Hero Section Gradient */
+  .hero-gradient {
+    background: linear-gradient(97.86deg, hsl(210deg 70% 20%) 0%, hsl(215deg 70% 30%) 50%, hsl(220deg 65% 50%) 100%);
+    /* Dark Blue Gradient */
+  }
+  
+  /* Gradient 02 (Box at top right) */
+  .gradient-02 {
+    position: absolute;
+    width: 200px;
+    height: 438px;
+    top: 0;
+    right: 0;
+    background: #7aebfb;
+    filter: blur(190px);
+  }
+  
+  /* Glassmorphism Effect */
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  
+  /* Gradient 03 (Diagonal Gradient Box) */
+  .gradient-03 {
+    position: absolute;
+    width: 404px;
+    height: 800px;
+    left: 20%;
+    top: 5%;
+    background: rgba(149, 66, 232, 0.35);
+    filter: blur(175px);
+    transform: rotate(-114.2deg);
+  }
+  
+  /* Gradient 04 (Vertical Gradient Box) */
+  .gradient-04 {
+    position: absolute;
+    width: 304px;
+    height: 100vh;
+    left: 30%;
+    top: 10%;
+    background: rgba(45, 72, 152, 0.75);
+    filter: blur(200px);
+    transform: rotate(-53.13deg);
+  }
+  
+  /* Gradient 05 (Fading Top Gradient) */
+  .gradient-05 {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
+  }
+  
+  /* Feedback Gradient (Purple Blur Box) */
+  .feedback-gradient {
+    position: absolute;
+    width: 200px;
+    height: 316px;
+    left: 0;
+    top: 0;
+    background: #8d39a3;
+    filter: blur(175px);
+  }
+  
+  /* Footer Gradient (Blue Blur Box) */
+  .footer-gradient {
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    left: 37%;
+    bottom: 0;
+    background: #65c4fa;
+    filter: blur(150px);
+  }
+  
